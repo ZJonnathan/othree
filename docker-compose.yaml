@@ -1,0 +1,18 @@
+version: "2"
+services:
+  index:
+    container_name: index
+    restart: always
+    build: .
+    ports:
+      - "3000:3000"
+    links:
+      - mongo
+  mongo:
+    container_name: mongo
+    image: mongo
+    expose:
+        - "27017"
+    ports:
+      - "27017:27017"
+    command: mongod --port 27017

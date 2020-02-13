@@ -1,0 +1,32 @@
+{
+  "name": "othree",
+  "version": "1.0.0",
+  "description": "prueba práctica",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "node node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZJonnathan/othree.git"
+  },
+  "author": "Jonnathan Rodríguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZJonnathan/othree/issues"
+  },
+  "homepage": "https://github.com/ZJonnathan/othree#readme",
+  "dependencies": {
+    "@hapi/joi": "^17.1.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "express": "^4.17.1",
+    "mocha": "^7.0.1",
+    "mockgoose": "^8.0.4",
+    "mongojs": "^3.1.0",
+    "mongoose": "^5.8.12",
+    "nodemon": "^2.0.2",
+    "supertest": "^4.0.2"
+  }
+}
